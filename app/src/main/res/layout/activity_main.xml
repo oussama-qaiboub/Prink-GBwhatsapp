@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Welcome To GB Latest Version"
+        android:textColor="#138d7f"
+        android:textSize="20dp"
+        android:ems="10"/>
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/welcome"
+        android:layout_below="@id/txtTitle"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgback"
+        android:gravity="center"
+        android:text="@string/Tap"
+        android:textColor="#1F2020"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnRestore"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDesc"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="#F11B1B"
+        android:ems="10"
+        android:text="RESTORE"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAgree"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRestore"
+        android:layout_marginTop="10dp"
+        android:background="#25d366"
+        android:text="AGREE ANDD CONTINUE"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints"
+        android:layout_centerInParent="true"/>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
+</LinearLayout>
